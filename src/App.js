@@ -13,10 +13,18 @@ import {
 } from "@material-ui/core";
 import { PhotoCamera } from "@material-ui/icons";
 import { Button } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 
+const useStyles = makeStyles ((theme) => ({
+  container: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing (9,0,6)
+  }
+}));
 
-function App() {
-  return (
+const App = () => {
+  const classes = useStyles();
+  return ( 
     <>
       <CssBaseline />
       <AppBar position="relative">
@@ -26,7 +34,7 @@ function App() {
         </Toolbar>
       </AppBar>
       <main>
-        <div>
+        <div className={classes.container}>
           <Container maxWidth="sm">
             <Typography variant="h2" align="center" color="textPrimay" gutterBottom>
               Photo Album
