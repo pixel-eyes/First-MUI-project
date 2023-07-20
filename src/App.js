@@ -42,11 +42,7 @@ const App = () => {
                     See my photos
                     </Button>
                 </Grid>
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                   Test
-                    </Button>
-                </Grid>
+                
                 <Grid item>
                   <Button variant="outlined" color="primary">
                     Secondary section
