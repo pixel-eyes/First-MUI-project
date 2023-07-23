@@ -7,10 +7,21 @@ import { ThemeProvider, createTheme } from "@material-ui/core";
 import { StylesProvider } from "@material-ui/core/styles";
 
 const theme = createTheme({
+  overrides: {
+    MuiButton: {
+      root: {
+        borderRadius: 50,
+        paddingLeft: 24,
+        paddingRight: 24,
+        disableElevation: true,
+      },
+    },
+  },
   palette: {
     primary: {
       main: "#E61E28",
     },
+
     typography: {
       h1: {
         fontSize: "20px",
