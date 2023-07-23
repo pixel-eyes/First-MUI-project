@@ -1,13 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider, createTheme } from "@material-ui/core";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const theme = createTheme ({
+  palette:{
+  primary:{
+    main: "#E61E28",
+  },
+  typography: {
+    h1: {
+      fontSize: '20px',
+      fontSize:700,
+    },
+    h2: {
+      fontSize:'16px',
+      fontSize:600,
+    },
+  },
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

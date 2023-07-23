@@ -23,7 +23,7 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const App = () => {
   const classes = useStyles();
   return (
-    <>
+    <div>
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
@@ -112,7 +112,7 @@ const App = () => {
           Something here to give the footer the purpose!
         </Typography>
       </footer>
-    </>
+    </div>
   );
 };
 
