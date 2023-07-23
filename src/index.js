@@ -4,20 +4,25 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider, createTheme } from "@material-ui/core";
+import { StylesProvider } from "@material-ui/core/styles";
 
-const theme = createTheme ({
-  palette:{
-  primary:{
-    main: "#E61E28",
-  },
-  typography: {
-    h1: {
-      fontSize: '20px',
-      fontSize:700,
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#E61E28",
     },
-    h2: {
-      fontSize:'16px',
-      fontSize:600,
+    typography: {
+      h1: {
+        fontSize: "20px",
+        fontSize: 700,
+      },
+      h2: {
+        fontSize: "16px",
+        fontSize: 600,
+      },
+    },
+    button: {
+      disableElevation: true,
     },
   },
 });
